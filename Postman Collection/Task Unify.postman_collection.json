@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "f6b2f31f-de89-4827-ae4e-0a429ff38beb",
+		"name": "Task Unify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14741512"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/movers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"weightLimit\" : 1000,\r\n    \"energy\" : 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/movers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"tv screen\",\r\n    \"weight\" : 3000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/items",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idMover\" : \"65b5378081b05f2f036c07cb\",\r\n    \"idItem\" : \"65b5390f09dc62b0c14368ee\",\r\n    \"num\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/final/records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idMover\" : \"65b537b681b05f2f036c07cf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/final/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"final",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/final/records",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"65b55b97ddf8b1754ee0223e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/final/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"final",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/final/records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/final/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"final",
+						"records"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
